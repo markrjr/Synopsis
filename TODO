@@ -1,0 +1,15 @@
+In order of importance/possibility?
+
+Implement visible files UI.
+    Almost done with the above.
+    Must be able to delete files from UI.
+    Associate dragged in files with filetype correct icon.
+Implement the ability to actually compress a file.
+
+
+Implement progress bar.
+Implement size estimator.
+Implement the ability to decompress files.
+
+Run after installing to get correct icon: gtk-update-icon-cache /usr/share/icons/hicolor
+

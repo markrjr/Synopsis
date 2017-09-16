@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Synopsis
+GenericName=Synopsis
+Comment=A simple and concise archive manager for elementary OS.
+Categories=GTK;Utility;
+Exec=Synopsis
+Icon=synopsis
+Terminal=false
+Type=Application
+X-GNOME-Gettext-Domain=synopsis
+X-GNOME-Keywords=Synopsis;Archive;Extract;
+#File Associations MimeType=image/png;image/gif;image/jpeg;image/bmp;image/x-pixmap;image/tiff;image/svg+xml;image/x-xpixmap;
