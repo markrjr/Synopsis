@@ -136,14 +136,14 @@ public class Synopsis : Granite.Application
        	 build_version_info = Constants.VERSION_INFO;
        	 */
        	 
-       	 app_years = "2014";
+       	 app_years = "2017";
        	 app_icon = "drop";
          app_icon = "synopsis"; 
        	 app_launcher = "Synopsis.desktop"; 
        	 application_id = "org.elementary.Synopsis";  //an unique id which will identify your application
        	 
        	 //those urls will be shown in the automatically generated about dialog
-       	 main_url = "https://code.launchpad.net/~markrtoon/synopsis/trunk";
+       	 main_url = "https://github.com/markrjr/Synopsis/";
 
        	 
        	 about_authors = {"Mark Raymond Jr. <markrjr@live.com>"};
@@ -177,20 +177,15 @@ public class Synopsis : Granite.Application
         Gtk.init(ref args); 
 
         var window = new MainWindow (); 
-        //Setup icon.
+        //Setup icon from the theme.
         try {
-            // Either directly from a file ...
-            window.icon = new Gdk.Pixbuf.from_file ("/usr/share/Synopsis/drop.png");
-            // ... or from the theme
-            //window.icon = IconTheme.get_default ().load_icon ("synopsis", 48, 0);
+            window.icon = IconTheme.get_default ().load_icon ("synopsis", 48, 0);
         } catch (Error e) {
             stderr.printf ("Could not load application icon: %s\n", e.message);
         }
         //Initialize the the ArrayList that will hold our image files.
         window.filesList = new ArrayList<ImageFile>();
 
-        //Dialog will enable later window.set_type_hint(Gdk.WindowTypeHint.DIALOG);
-        //window.set_icon(icon);
         Gtk.Settings.get_default ().gtk_application_prefer_dark_theme = true;
         window.show_all (); 
 
