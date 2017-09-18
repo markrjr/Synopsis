@@ -1,4 +1,4 @@
-/* Copyright 2014 Mark Raymond Jr.
+/* Copyright 2017 Mark Raymond Jr.
 *
 * This file is part of Synopsis
 *
